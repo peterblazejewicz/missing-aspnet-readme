@@ -1,0 +1,10 @@
+# The missing README.md for ASP.NET 5
+
+The `README.md` content was based on html welcome page that is still created and shipped with VisualStudio tooling for ASP.NET 5.
+Most projects seem to use README files (like README.md supported on GitHub.com) hence this project.
+
+The `README.md` created here is now shipping with `generator-aspnet`:
+https://github.com/OmniSharp/generator-aspnet
+
+Thanks!
+@peterblazejewicz
