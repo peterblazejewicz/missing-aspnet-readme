@@ -1,7 +1,7 @@
 # Welcome to ASP.NET 5
 We've made some big updates in this release, so it’s **important** that you spend a few minutes to learn what’s new.
 
-## You've created a new ASP.NET 5 project. [Learn what's new](http://go.microsoft.com/fwlink/?LinkId=518016)
+**You've created a new ASP.NET 5 project. [Learn what's new](http://go.microsoft.com/fwlink/?LinkId=518016)**
 
 ## This application consists of:
 * Sample pages using ASP.NET MVC 6
