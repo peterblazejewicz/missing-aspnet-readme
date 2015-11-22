@@ -1,0 +1,26 @@
+{
+  "name": "readme-generator",
+  "repository": {
+	 "type": "git",
+	 "url": "https://github.com/peterblazejewicz/missing-aspnet-readme"
+  },
+  "description": "Generate README.md from ASP.NET 5 project readme page",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+	"start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Peter Blazejewicz",
+  "license": "MIT",
+  "configuration": {
+    "url": "https://raw.githubusercontent.com/aspnet/Templates/dev/src/BaseTemplates/StarterWeb/Project_Readme.html"
+  },
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "jshint": "^2.8.0",
+    "request": "^2.67.0",
+    "to-markdown": "^2.0.1"
+  }
+}
