@@ -22,5 +22,8 @@
     "jshint": "^2.8.0",
     "request": "^2.67.0",
     "to-markdown": "^2.0.1"
+  },
+  "engines": {
+    "node": "^4"
   }
 }
