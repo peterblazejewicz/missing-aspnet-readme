@@ -1,8 +1,8 @@
-# Welcome to ASP.NET Core 1
+# Welcome to ASP.NET Core
 
 We've made some big updates in this release, so it’s **important** that you spend a few minutes to learn what’s new.
 
-You've created a new ASP.NET Core 1 project. [Learn what's new](http://go.microsoft.com/fwlink/?LinkId=518016)
+You've created a new ASP.NET Core project. [Learn what's new](http://go.microsoft.com/fwlink/?LinkId=518016)
 
 ## This application consists of:
 
@@ -22,8 +22,8 @@ You've created a new ASP.NET Core 1 project. [Learn what's new](http://go.micros
 
 ## Overview
 
-*   [Conceptual overview of what is ASP.NET Core 1](http://go.microsoft.com/fwlink/?LinkId=518008)
-*   [Fundamentals of ASP.NET Core 1 such as Startup and middleware.](http://go.microsoft.com/fwlink/?LinkId=699320)
+*   [Conceptual overview of what is ASP.NET Core](http://go.microsoft.com/fwlink/?LinkId=518008)
+*   [Fundamentals of ASP.NET Core such as Startup and middleware.](http://go.microsoft.com/fwlink/?LinkId=699320)
 *   [Working with Data](http://go.microsoft.com/fwlink/?LinkId=398602)
 *   [Security](http://go.microsoft.com/fwlink/?LinkId=398603)
 *   [Client side development](http://go.microsoft.com/fwlink/?LinkID=699321)
@@ -33,8 +33,7 @@ You've created a new ASP.NET Core 1 project. [Learn what's new](http://go.micros
 ## Run & Deploy
 
 *   [Run your app](http://go.microsoft.com/fwlink/?LinkID=517851)
-*   [Run your app on .NET Core](http://go.microsoft.com/fwlink/?LinkID=517852)
-*   [Run commands in your project.json](http://go.microsoft.com/fwlink/?LinkID=517853)
+*   [Run tools such as EF migrations and more](http://go.microsoft.com/fwlink/?LinkID=517853)
 *   [Publish to Microsoft Azure Web Apps](http://go.microsoft.com/fwlink/?LinkID=398609)
 
 We would love to hear your [feedback](http://go.microsoft.com/fwlink/?LinkId=518015)
