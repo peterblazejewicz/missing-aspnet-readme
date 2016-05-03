@@ -3,9 +3,9 @@
  * - fetches content of ASP.NET 5 project readme template file
  * - uses cheerio to build page object and access DOM content
  * - uses to-markdown to convert page content into Github flavoured markdown
- * 
+ *
  * @author Peter Blazejewicz
- * 
+ *
  * @example
  * // using npm
  * npm install
@@ -31,6 +31,13 @@ request({
 	if (response.statusCode === 200) {
 		console.log("parsing content with cheerio");
 		var $ = cheerio.load(body);
+        $("a[href^='http://go.microsoft.com']")
+            .each(function() {
+                if(this.attribs.href) {
+                    this.attribs.href =  this.attribs.href
+                        .replace(/http:\/\/go\.microsoft\.com/i, "https://go.microsoft.com");
+                }
+            });
 		var $body = $("body");
 		var contentConverter = {
 			filter: ["div", "span"],
@@ -38,19 +45,11 @@ request({
 				return content;
 			}
 		};
-        var protocolConverter = {
-            filter: ["a"],
-            replacement: function(content, node) {
-                var url = node.href;
-                if(url) url = url.replace(/http:\/\/go\.microsoft\.com/i, 'https://go.microsoft.com');
-                return "["  + content +"](" + url + ")";
-            }
-        };
 		console.log("done");
 		console.log("parsing content to Github flavoured Markdown ...");
 		var md = toMarkdown($body.html(), {
 			gfm: true,
-			converters: [protocolConverter, contentConverter]
+			converters: [contentConverter]
 		});
 		console.log("updating README.md");
 		fs.writeFile("../README.md", md, function (error) {
