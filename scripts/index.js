@@ -43,16 +43,14 @@ request({
             replacement: function(content, node) {
                 var url = node.href;
                 if(url) url = url.replace(/http:\/\/go\.microsoft\.com/i, 'https://go.microsoft.com');
-                node.href = url;
-                console.log(node.href + " " + content);
-                return content;
+                return "["  + content +"](" + url + ")";
             }
         };
 		console.log("done");
 		console.log("parsing content to Github flavoured Markdown ...");
 		var md = toMarkdown($body.html(), {
 			gfm: true,
-			converters: [contentConverter, protocolConverter]
+			converters: [protocolConverter, contentConverter]
 		});
 		console.log("updating README.md");
 		fs.writeFile("../README.md", md, function (error) {
